@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Qr Generated</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code is ready!</h1>
+        <img src="{{url_for('static',filename='qrcodes/'+ qr_file)}}" width="200" >
+        <br><a href="{{url_for('static',filename='qrcodes/'+ qr_file)}}" download="filename"><button>Download QR Code</button></a>
+    </div>
+
+</body>
+</html>
