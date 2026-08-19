@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+<body>
+<div class="bg"></div>
+
+    <form action="/generator" method="POST">
+        <div class="container">
+            <div class="heading">
+
+                <div class="form-group">
+                    <label>Name: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Surname: </label>
+                    <input type="text" name="surname" id="surname" required>
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth: </label>
+                    <input type="date" name="age" id="age" required>
+                </div>
+                <div class="form-group">
+                    <label>Email: </label>
+                    <input type="email" name="email" id="email" placeholder="tsassedorcas@gmail.com">
+                </div>
+
+            </div>
+
+            <div class="btn">
+                <button type="reset" class="btn-left">Cancel</button>
+                <button type="submit" class="btn-right">Submit </button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
